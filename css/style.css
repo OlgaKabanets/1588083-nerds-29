@@ -1,0 +1,215 @@
+/* Variables */
+
+:root {
+    --basic-black: #000000;
+    --basic-dark: #283136;
+    --basic-white: #ffffff;
+    --basic-red: #FB565A;
+    --basic-grey: #EEEEEE;
+
+    /* Buttons */
+
+    --button-red-hover: #E74246;
+    --button-red-clik: #D7373B;
+
+    --button-green-regular: #00CA74;
+    --button-green-hover: #00BC6C;
+    --button-green-clik: #00AA62;
+
+    --button-gold-regular: #EFC84A;
+    --button-gold-hover: #EAB534;
+    --button-gold-clik: #E5A722;
+
+
+    --button-grey-hover: #DFDFDF;
+    --button-grey-clik: #D5D5D5;
+    --button-grey-active: rgba(0, 0, 0, 0.1);
+
+    --button-shadow: 0px 3px rgba(0, 1, 1, 0.1);
+
+    --button-social-regular: #E1E1E1;
+  }
+
+  /* Global */
+
+  body {
+    min-width: 1160px;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--basic-dark);
+    background-color: var(--basic-white);
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+.page {
+  height: 100%;
+}
+
+.main-header{
+  background-color: var(--basic-grey);
+}
+  
+.main-navigation {
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--basic-black);
+  background-color: transparent;
+  text-transform: uppercase;
+}
+  
+.site-navigation {
+  list-style: none;
+}
+  
+.site-navigation a,
+.cart-link a {
+color: var(--basic-white);
+}
+  
+.site-navigation a:hover,
+.site-navigation a:focus,
+.cart-link a:hover,
+.cart-link a:focus {
+  background-color: var(--basic-extra-dark);
+}
+    
+/* Features */
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.feature-item h3 {
+  font-size: 30px;
+  line-height: 42px;
+}
+/* Index columns */
+.index-columns {
+  color: var(--basic-black);
+  background-color: var("-----basic-black-light");
+  background-image: url("--basic--neutral-light");
+  background-position: center, 0 0;
+  background-repeat: no-repeat, repeat;
+}
+
+.index-columns h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+/* Button */
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: var("--basic-red-light");
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-black);
+  border: none;
+}
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: var("--basic-red-light");
+}
+
+.button.disabled,
+.button:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: var(--basic-black);
+}
+
+/* Contacts */
+
+.contacts-phone {
+  color: inherit;
+}
+/* Appointment */
+
+.appointment-item input {
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid var(--basic--neutral-light);
+}
+
+.appointment-item input:focus {
+  border-color: var(--special);
+}
+/* Appointment */
+
+.appointment-item input {
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid var(--basic--neutral-light);
+}
+
+.appointment-item input:focus {
+  border-color: var(--special);
+}
+
+.footer-contacts a {
+  color: var(--basic-white);
+  text-decoration: underline;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  text-decoration: none;
+}
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-social h2 {
+  font-size: 14px;
+
+}
+
+/* Social button */
+
+.social-button {
+  color: inherit;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--basic-white);
+}
+
+/* Modal */
+
+.modal {
+  color: var(--basic-black);
+  background-color: var(--basic-extra-light);
+  background-image: url("../img/pattern-light.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-login h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
