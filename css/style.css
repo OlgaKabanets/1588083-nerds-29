@@ -1,67 +1,110 @@
 /* Variables */
 
 :root {
-    --basic-black: #000000;
-    --basic-dark: #283136;
-    --basic-white: #ffffff;
-    --basic-red: #FB565A;
-    --basic-grey: #EEEEEE;
+  --basic-black: #000000;
+  --basic-dark: #283136;
+  --basic-white: #ffffff;
+  --basic-red: #fb565a;
+  --basic-grey: #eeeeee;
 
-    /* Buttons */
+  /* Buttons */
 
-    --button-red-hover: #E74246;
-    --button-red-clik: #D7373B;
+  --button-red-hover: #e74246;
+  --button-red-clik: #d7373b;
 
-    --button-green-regular: #00CA74;
-    --button-green-hover: #00BC6C;
-    --button-green-clik: #00AA62;
+  --button-green-regular: #00ca74;
+  --button-green-hover: #00bc6c;
+  --button-green-clik: #00aa62;
 
-    --button-gold-regular: #EFC84A;
-    --button-gold-hover: #EAB534;
-    --button-gold-clik: #E5A722;
+  --button-gold-regular: #efc84a;
+  --button-gold-hover: #eab534;
+  --button-gold-clik: #e5a722;
 
+  --button-grey-hover: #dfdfdf;
+  --button-grey-clik: #d5d5d5;
+  --button-grey-active: rgba(0, 0, 0, 0.1);
 
-    --button-grey-hover: #DFDFDF;
-    --button-grey-clik: #D5D5D5;
-    --button-grey-active: rgba(0, 0, 0, 0.1);
+  --button-shadow: 0px 3px rgba(0, 1, 1, 0.1);
 
-    --button-shadow: 0px 3px rgba(0, 1, 1, 0.1);
+  --button-social-regular: #e1e1e1;
+}
 
-    --button-social-regular: #E1E1E1;
-  }
+/* Global */
 
-  /* Global */
+body {
+  min-width: 1160px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-dark);
+  background-color: var(--basic-white);
+}
+header {
+  background-color: var(--basic-grey);
+}
 
-  body {
-    min-width: 1160px;
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    color: var(--basic-dark);
-    background-color: var(--basic-white);
-  }
+a {
+  text-decoration: none;
+}
 
-  a {
-    text-decoration: none;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 .page {
   height: 100%;
+  margin: 0;
 }
 
-.main-header{
+.main-header {
   background-color: var(--basic-grey);
 }
-  
+.second-header {
+  background-color: var(--basic-grey);
+}
+.promo h2 {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  color: var(--basic-black);
+}
+.promo p {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: var(--basic-dark);
+}
+
+.about h2 {
+  font-size: 45px;
+  line-height: 45px;
+  color: var(--basic-black);
+}
+.about h3 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.about p {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-dark);
+}
+.about-features-list-item h2 {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+}
+.about-features-list-item sup {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 40px;
+}
 .main-navigation {
   font-size: 16px;
   line-height: 20px;
@@ -69,23 +112,26 @@
   background-color: transparent;
   text-transform: uppercase;
 }
-  
+
 .site-navigation {
   list-style: none;
 }
-  
+
 .site-navigation a,
 .cart-link a {
-color: var(--basic-white);
+  color: var(--basic-black);
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
 }
-  
+
 .site-navigation a:hover,
 .site-navigation a:focus,
 .cart-link a:hover,
 .cart-link a:focus {
   background-color: var(--basic-extra-dark);
 }
-    
+
 /* Features */
 
 .features-list {
@@ -118,11 +164,13 @@ color: var(--basic-white);
 .button {
   font: inherit;
   text-align: center;
-  color: var("--basic-red-light");
+  line-height: 18px;
+  color: var(--basic-white);
   vertical-align: middle;
   text-transform: uppercase;
-  background-color: var(--basic-black);
+  background-color: var(--basic-red);
   border: none;
+  border-radius: 3px;
 }
 .button:hover,
 .button:focus,
@@ -165,9 +213,19 @@ color: var(--basic-white);
   border-color: var(--special);
 }
 
-.footer-contacts a {
-  color: var(--basic-white);
+.footer-contacts a,
+p {
+  color: var(--basic-grey);
   text-decoration: underline;
+  font-size: 16px;
+  line-height: 18px;
+}
+.footer-contacts h2 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-dark);
 }
 
 .footer-contacts a:hover,
@@ -184,9 +242,18 @@ color: var(--basic-white);
 
 .footer-social h2 {
   font-size: 14px;
-
 }
-
+.footer-discount h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--basic-black);
+}
+.footer-discount p {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--basic-dark);
+}
 /* Social button */
 
 .social-button {
