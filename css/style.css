@@ -39,7 +39,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: var(--basic-dark);
+  color: var(--basic-black);
   background-color: var(--basic-white);
 }
 header {
@@ -66,6 +66,7 @@ img {
 .second-header {
   background-color: var(--basic-grey);
 }
+
 .promo h2 {
   font-size: 55px;
   font-weight: 500;
@@ -130,6 +131,18 @@ img {
 .cart-link a:hover,
 .cart-link a:focus {
   background-color: var(--basic-extra-dark);
+}
+.catalog-list {
+  list-style: none;
+}
+.catalog-list-item h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.catalog-list-item {
+  background-color: var(--basic-grey);
 }
 
 /* Features */
@@ -279,4 +292,18 @@ p {
 .modal-login h2 {
   font-size: 30px;
   line-height: 42px;
+}
+.services h3 {
+  text-transform: uppercase;
+  color: var(--basic-black);
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+.services p {
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: var(--basic-dark);
 }
